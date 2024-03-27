@@ -3,7 +3,7 @@ module impulse5(
    input wire reset,
    output reg impulse
 );
-reg count;
+reg[2:0] count;
 
 always @(posedge clk)
 begin
