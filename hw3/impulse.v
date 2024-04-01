@@ -9,7 +9,7 @@ always @(posedge clk)
 begin
 	if (reset)
 	begin
-		count <= 1'd0;
+		count <= 3'd0;
 		impulse <= 1'd0;
 	end
 	else
@@ -17,12 +17,12 @@ begin
 		if (count == 3'h5)
 			begin 
 			count <= 3'h0;
-			impulse <= 1'h0;
+			impulse <= 1'd0;
 			end
 		else
 			begin
 				count <= count + 3'h1;
-				impulse <= 1'h0;
+				impulse <= 1'd0;
 			end
 		end		
 end
