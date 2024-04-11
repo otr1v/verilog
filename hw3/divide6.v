@@ -19,3 +19,4 @@ begin
 end
 end
 assign clk_div6 = (counter < 3'h3);
+endmodule
